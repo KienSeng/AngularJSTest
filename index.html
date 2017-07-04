@@ -1,27 +1,19 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html>
 <head>
-	<link rel="stylesheet" href="style.css"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angular-ui-router/1.0.0-rc.1/angular-ui-router.min.js"></script>
-	<script src="Controller/myAppController.js"></script>
-	<script src="Controller/route.js"></script>
+	<link rel="stylesheet" href="style.css"/>
 </head>
-<body ng-controller="myAppController">
+<body ng-app="MyApp">
 	<header>
-		<h1>My Application</h1>
-		<nav class="navbar-header">
-			<div class="container">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#/ModulePage/testPage"><i class="fa fa-home"></i>Page 1</a></li>
-					<li><a href="/"><i class="fa fa-home"></i>Page 2</a></li>
-				</ul>
-			</div>
+		<nav ng-click="$event.preventDefault()">
+			<a hrefd="#" ng-click="">Page 1</a>
+			<a hrefd="#" ng-click="">Page 2</a>
+			<a hrefd="#" ng-click="">Page 3</a>
 		</nav>
 	</header>
-	
-	<div id="app">
-		<div ng-view class="container"></div>
+	<div>
+
 	</div>
 </body>
 </html>
